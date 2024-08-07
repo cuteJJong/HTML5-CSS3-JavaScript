@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript's Datatype</h1>
+    <script>
+      // //hoisting : JavaScript만의 기능
+
+      // //let : 변수
+      // let age = 28;
+      // age = "Hello, World";
+      // document.write("age = " + age);
+      // console.log("age = " + age);
+      // //let age = "서울시 영등포구 선유로9 30";
+      // //console.log("age = " + age);
+
+      // //const : 상수
+      // const address = "서울시 영등포구 선유로9 30";
+      // console.log("address = " + address);
+      // address = "서울시 강남구 역삼동";
+      // console.log("address");
+
+      let age; //declaration
+      age = 28; //number literal
+      age = "서울시 강남구 역삼동"; //string literal
+      age = 5 < 3; //boolean literal
+      age = [1, "Hello", true, ["Mango", "Apple"]]; //array literal
+      age = { name: "한지민", kor: 90, grade: "A" }; //Object literal
+      age = () => {
+        console.log("Hello"); //function literal
+      };
+      age();
+    </script>
+  </body>
+</html>
