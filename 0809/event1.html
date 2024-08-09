@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ol { list-style-type: none;}
+    ol > li { display: inline;}
+  </style>
+</head>
+<body>
+  <h1>prevent Default Event</h1>
+  <ol>
+    <li><a href="#" id="apple">Apple | </a></li>
+    <li><a href="#" id="melon">Melon | </a></li>
+    <li><a href="#" id="mango">Mango</a></li>
+  </ol>
+  <hr>
+  <div id="result"><img src="" alt="" id="myImg"></div>
+  <script>
+    const alinks = document.getElementsByTagName('a')
+    for(let i = 0 ; i < alinks.length ; i++) {
+      alinks[i].addEventListener('click', myClick, false);
+    }
+    function myClick(evt) {
+      evt.preventDefault();
+      //console.log(evt.target.id); 
+      const img = document.getElementById('myImg');
+      switch(evt.target.id){
+        case "apple": img.setAttribute('src', 'images/apple.jpg'); break;
+        case "mango": img.setAttribute('src', 'images/mango.jpg'); break;
+        case "melon": img.setAttribute('src', 'images/melon.jpg'); break;
+      }
+    }
+  </script>
+</body>
+</html>
