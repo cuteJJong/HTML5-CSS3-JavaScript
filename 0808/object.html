@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript Object</h1>
+    <!-- <p>
+      <button type="button" onclick="bgChange(this)">RED</button>&nbsp;&nbsp;
+      <button type="button" onclick="bgChange(this)">BLUE</button>
+    </p> -->
+    <script>
+      // function bgChange(evt) {
+      //   // console.log(evt.innerHTML);
+      //   document.body.style.backgroundColor = evt.innerHTML.toLowerCase();
+      // }
+
+      // const car = { name: "Sonata" };
+      // console.log(car.name);
+      // car.price = 30000000;
+      // console.log(car.price);
+
+      // let Student = function (irum, ko, en, math) {
+      //   //let은 private
+      //   let name = irum;
+      //   let kor = ko;
+      //   let eng = en;
+      //   let mat = math;
+      //   this.getName = function () {
+      //     return name;
+      //   };
+      //   this.setName = function (irum) {
+      //     name = irum;
+      //   };
+      // };
+      // let name = window.prompt("이름은 ? ");
+      // let kor = window.prompt("국어 : ");
+      // let eng = window.prompt("영어 : ");
+      // let mat = window.prompt("수학 : ");
+      // //let chulsu = new Student("김철수", 78, 90, 100);
+      // let chulsu = new Student(
+      //   name,
+      //   parseInt(kor),
+      //   parseInt(eng),
+      //   parseInt(mat)
+      // );
+      // //console.log(chulsu.kor);
+      // console.log(chulsu.name);
+      // console.log(chulsu.getName());
+      // chulsu.setName("이영희");
+      // console.log(chulsu.getName());
+
+      // let now = new Date(2024, 7, 8, 12, 0, 0);
+      // console.log(now.toLocaleString());
+      // if (3 === "3") {
+      //   console.log("같다");
+      // } else {
+      //   console.log("다르다");
+      // }
+      let arrays = [4, 6, 1, 2, 3, 8, 0];
+      arrays.sort(mycompare);
+      function mycompare(a, b) {
+        return a - b;
+      }
+      //arrays.sort((a,b) => {b - a});
+      console.log(arrays);
+    </script>
+  </body>
+</html>

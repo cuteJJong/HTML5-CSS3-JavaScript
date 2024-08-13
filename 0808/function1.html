@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Inner Function & Closure</h1>
+  <script>
+    //outer 는 inner 접근 X
+    function outer(greeting){
+      // return function inner(whom){
+      //   console.log(greeting + ',' + whom);
+      // }
+      // inner('jimin');
+      // //console.log(whom);
+
+      // inner function 에 함수를 return 하는 것을 Closure
+      //return greeting + ', jimin';  //string
+      //return 5; //number
+      // return false; //boolean literal
+      // return ['Mango', 'Apple'];  //array literal
+      //return { name:'Sonata', price:300000};  //object literal
+      return function inner(whom){ console.log(greeting + ',' + whom);}
+
+    }
+    const result = outer('Hello');
+    result('jimin');
+    result('chulsu');
+    const eval = outer('Good Morning');
+    eval('jimin');
+    //console.log(result[1]);
+    //outer('Hello');
+    //inner('chulsu');
+
+  </script>
+</body>
+</html>
