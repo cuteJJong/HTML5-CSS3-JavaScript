@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript Function</h1>
+    <script>
+      //1. Declarative / static funtion 중요
+      // function calc(a, b) {
+      //   return a * b;
+      // }
+      // console.log(calc(4, 8));
+
+      //2. Dynamic / Anonymous Function
+      // const calc = new Function("a", "b", "return a * b");
+      // const aaa = calc;
+      // console.log(aaa(4, 8));
+
+      //3. function literal 중요
+      const calc = (a, b) => { console.log(a * b); }
+      const bbb = calc;
+      bbb(4, 9);
+      //console.log(bbb(4,9));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript Operator</h1>
+    <script>
+      // let age = "Hello World";
+      // console.log(typeof age); //String
+      // age = 28;
+      // console.log(typeof age); //Number
+      // age = 4 > 7;
+      // console.log(typeof age); //boolean
+      // let address;
+      // console.log(typeof address); //undefined
+      // address = null;
+      // console.log(typeof address); //object
+      // address = [1, 2, 3];
+      // console.log(typeof address); //object
+      // address = { name: "jimin", age: 28 };
+      // console.log(typeof address); //object
+      // address = () => {
+      //   console.log("Hello, World");
+      // };
+      // console.log(typeof address); //function
+      let fruit = ["Mange", "Melon", "Apple"];
+      console.log(fruit);
+      delete fruit[1]; <!--요소의 값만 삭제.-->
+      console.log(fruit[1]);
+      let car = { name: "Sonata", price: 3000000, maker: "Hyundai" };
+      console.log(car);
+      delete car.price;
+      //console.log(price in car);
+      console.log("maker" in car);
+      console.log(car["maker"]); //간략하게 -> car.maker
+      // console.log(car);
+      // delete car;
+      // console.log(car);
+    </script>
+  </body>
+</html>
