@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Conversion</h1>
+    <p>
+      <label>Age : </label>
+      <input type="text" placeholder="Enter your age..." id="userage" />
+      <button type="button" onclick="myClick()">Click Me!</button>
+    </p>
+    <script>
+      function myClick() {
+        let age = document.getElementById("userage").value;
+        //age = Number(age);
+        age = parseInt(age);
+        console.log(`당신의 나이는 ${age + 10}살이군요.`);
+      }
+    </script>
+  </body>
+</html>
