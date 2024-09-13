@@ -1,0 +1,70 @@
+/* ToDo 수정 입력 필드 스타일 */
+.todo-content {
+  background-color: #ffe6f2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* 체크박스와 To do 텍스트 나란히 배치 */
+.todo-text-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-family: 'Cute Font', cursive;
+  font-size: 16px;
+}
+
+.todo-checkbox {
+  margin-right: 10px; /* 체크박스와 To do 텍스트 사이 간격 */
+}
+
+.todo-text {
+  color: #ff69b4;
+  font-family: 'Cute Font', cursive;
+  font-size: 16px;
+}
+
+/* 입력 필드 스타일 */
+.todo-content input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Cute Font', cursive;
+  color: #ff69b4;
+  background-color: #ffccdf;
+  border: 1px solid #ff99c8;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.todo-content input[type="text"]:focus {
+  outline: none;
+  border-color: #ff8fb1;
+}
+
+/* 버튼 스타일 */
+.todo-content button {
+  width: 100%; /* 버튼 크기 유지 */
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Cute Font', cursive;
+  background-color: #ff8fb1;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.todo-content button:hover {
+  background-color: #ff7093;
+}

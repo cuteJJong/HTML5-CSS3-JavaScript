@@ -1,0 +1,221 @@
+/* 전체 페이지 스타일 */
+body {
+    font-family: 'Arial', sans-serif; /* 본문에 귀여운 폰트를 적용하고 싶다면 'Cute Font'로 변경하세요 */
+    background-color: #ffe6f2; /* 핑크 배경색 */
+    color: #ff69b4; /* 핑크 글씨 색상 */
+    line-height: 1.6;
+    padding: 20px;
+    height: 100vh; /* 화면 전체 높이 설정 */
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    margin: 0;
+}
+
+.to-do-container {
+    max-width: 600px;
+    width: 100%; /* 컨테이너가 화면에 맞게 조정되도록 설정 */
+    margin: 0 auto;
+    background-color: #ffe6f2;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    
+}
+
+.to-do-container2 {
+    max-width: 600px;
+    width: 100%; /* 컨테이너가 화면에 맞게 조정되도록 설정 */
+    margin: 0 auto;
+    background-color: #ffe6f2;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+}
+
+
+
+h1 {
+    font-family: 'Cute Font', cursive; /* 제목에 귀여운 폰트 적용 */
+    text-align: center;
+    color: #ff69b4; /* 핑크 색상 적용 */
+    margin-bottom: 20px;
+}
+
+/* 입력 필드 스타일 */
+.to-do-input {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#to-do-input, .edit-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    color: #ff69b4; /* 입력 필드 텍스트 핑크 */
+    background-color: #ffccdf;
+    border: 1px solid #ff99c8;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    margin-right: 10px;
+}
+
+#to-do-input:focus, .edit-input:focus {
+    outline: none;
+    border-color: #ff8fb1;
+}
+
+/* 버튼 스타일 */
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #ff8fb1;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff7093;
+}
+
+/* To-Do 아이템 스타일 */
+.to-do-list > div, .todo-item {
+    background-color: #ffccdf;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: fadeIn 0.3s ease;
+}
+
+.to-do-list > div:hover, .todo-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.to-do-list span, .todo-content {
+    word-break: break-word;
+    flex-grow: 1;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.to-do-list .buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.to-do-list button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #ff99c8;
+    color: #4a4a4a;
+}
+
+.to-do-list button:hover {
+    background-color: #ff7093;
+}
+
+/* 체크박스 스타일 */
+.todo-checkbox {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #ff8fb1;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.todo-checkbox:checked {
+    background-color: #ff8fb1;
+    border-color: #ff8fb1;
+}
+
+.todo-checkbox:checked::before {
+    content: '✓';
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.todo-checkbox:hover {
+    border-color: #ff7093;
+}
+
+/* 애니메이션 효과 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffe6f2;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-family: 'Cute Font', cursive;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #ff69b4;
+    background-color: #ffccdf;
+    border: 1px solid #ff99c8;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.login-input:focus {
+    outline: none;
+    border-color: #ff8fb1;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff8fb1;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #ff7093;
+}
